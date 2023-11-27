@@ -1,33 +1,22 @@
 public class Principal {
     public static void main(String[] args) {
-        //login
-        int opcao=0;
+        int opcao = 0;
         String nome="";
         String senha="";
-        opcao = EntradaSaida.solicitarOpcaoMenu(opcao);
-        switch (opcao) {
-            case 1:
-                nome=EntradaSaida.loginUsuario();
-                break;
-        
-            default:
-                break;
-        }
-        //me ajuda gabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaas
-        /*
-         COMO FAZ PRA DIMINUIR A FONTE
-         sabe porque lula porque voce é cringe gado e goré não lhe tanko agora bolsonaro é redpill based bolsonaro eu tanko
-         */
-        /*se como admin
-            //modificar descontos
-            //deletar usuario
-        //se como user
-            //cargo
-            //salario bruto
-            //historico
-            //selecionar descontos
-            //selecionar mes/ano
-            //mostrar folha de pagamento com as taxas de desconto
-            //frifaire*/
+        opcao=EntradaSaida.solicitarOpcaoMenu(opcao);
+        switch(opcao){
+        case 1:
+            nome=EntradaSaida.loginUsuarioNome();
+            senha=EntradaSaida.loginUsuarioSenha();
+            Validacao.validarEntradaUsuario(nome,senha);
+            break;
+
+        case 2:
+            EntradaSaida.CadastrarUsuario();
+            break;
+       
+        default:
+            break;
+       }
     }
 }

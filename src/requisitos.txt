@@ -1,0 +1,7 @@
+- Criação de Usuário;
+- Login do Usuário;
+- Login do Administrador;
+- Solicitação de salário;
+- Questionamento: é CLT? -> Caso sim, automaticamente faz o cálculo de INSS e IRRF;
+- Switches para seleção de descontos;
+- Cálculo;
