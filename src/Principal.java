@@ -4,7 +4,7 @@ public class Principal {
         int opcao=0;
         String nome="";
         String senha="";
-        opcao = EntradaSaida.menuLogin(opcao);
+        opcao = EntradaSaida.solicitarOpcaoMenu(opcao);
         switch (opcao) {
             case 1:
                 nome=EntradaSaida.loginUsuario();

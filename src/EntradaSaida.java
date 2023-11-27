@@ -1,15 +1,14 @@
 import javax.swing.JOptionPane;
 
 public class EntradaSaida {
-    public static double solicitarSalario(){
-        double salario=Double.parseDouble(JOptionPane.showInputDialog("Digite o valor de seu salário bruto: (Modelo: XXXXX.XX)"));
-        Validacao.validarSalario(salario);
-        return salario;
+    public static String loginUsuario(){
+        return sysou("Informe seu nome");
     }
-    public static int solicitarHorasExtras(){
-        int horasExtras=Integer.parseInt(JOptionPane.showInputDialog("Digite a quantidade de horas extras feitas: (Em números inteiros)"));
-        return horasExtras;
+
+    public static int solicitarOpcaoMenu(int opcao){
+       return Integer.parseInt(JOptionPane.showInputDialog("Digite a quantidade de horas extras feitas: (Em números inteiros)"));
     }
+
     public static void mostrarMensagem(String msg){
         JOptionPane.showMessageDialog(null, msg, "AVISO", 0);
     }
