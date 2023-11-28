@@ -1,7 +1,7 @@
 - Criação de Usuário;
 - Login do Usuário;
-- Login do Administrador;
-- Solicitação de salário;
+- Login do Administrador padrão com possibilidade de alteração;
+- Solicitação de salário bruto;
 - Questionamento: é CLT? -> Caso sim, automaticamente faz o cálculo de INSS e IRRF;
 - Switches para seleção de descontos;
-- Cálculo;
+- Cálculo, devolvendo o salario liquido;
