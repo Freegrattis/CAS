@@ -15,5 +15,6 @@ Como funciona?
     \>4 - Tela de seleção de descontos - Tela onde será selecionado os descontos da folha.
             Por hora as seleções serão realizadas por números, os números selecionados irão contribuir para um maior desconto da folha de pagamento;
             Nesta tela também haverá um menu (futuramente uma lista suspensa), no qual o usuário seleciona o mês e o ano que está realizando a consuta, 
-            para que sua 
-        \>                                                                                                                    
+            para que seu histórico seja montado;
+        \> 5 - Tela de Resultados  - Será disponibilizado um menu no qual o salário bruto possa ser consultado, ou o salário líquido ou os descontos.
+                Ainda na tela de resultados, quando a opção descontos forem selecionadas, será possível selecionar algum desconto e receber uma informação prévia sobre ele.                                                                              
