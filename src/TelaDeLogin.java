@@ -1,23 +1,23 @@
 public class TelaDeLogin {
-    public static int mostrarTelaLogin() {
+    public int mostrarTelaLogin() {
         int opcao = 0;
         String nome = "";
         String senha = "";
         boolean validacao = false;
-        Users u = new Users();
+        BancoUsuarios b = new BancoUsuarios();
         do {
             opcao = EntradaSaida.escolherOpcaoMenuTelaLogin();
             switch (opcao) {
                 case 1:
                     nome = EntradaSaida.loginUsuario("o nome");
                     senha = EntradaSaida.loginUsuario("a senha");
-                    //validacao = Validacao.verificaUsuario(nome,senha);
+                    validacao = BancoUsuarios.verificaUsuario(nome,senha);
                     break;
                 case 2:
-                    User addUser= new User();
-                    addUser.nome=EntradaSaida.CadastrarUsuario("o nome");
-                    addUser.senha=EntradaSaida.CadastrarUsuario("a senha");
-                    u.adicionarUser(addUser);
+                    Usuarios u = new Usuarios();
+                    u.nome=EntradaSaida.CadastrarUsuario("o nome");
+                    u.senha=EntradaSaida.CadastrarUsuario("a senha");
+                    b.adicionarUser(u);
                     break;
                 case 3:
                     nome = EntradaSaida.loginAdmin("o nome");

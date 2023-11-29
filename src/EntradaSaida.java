@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
 public class EntradaSaida {
     public static int escolherOpcaoMenuTelaLogin(){
         System.out.println("Escolha uma opção: \n[1] Entrar como usuario\n[2] Cadastrar novo usuario \n[3] Entrar como administrador\n[4] Sair");
@@ -27,4 +29,7 @@ public class EntradaSaida {
         Scanner escolha = new Scanner(System.in);
         return escolha.nextInt();
     }
+	public static void mostrarAviso() {
+        JOptionPane.showMessageDialog(null, "Usuário não existe!", "AVISO", 0);
+	}
 }
