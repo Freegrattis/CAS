@@ -14,7 +14,7 @@ public class BancoUsuarios{
         }
         return usuarios;
     }
-    public static boolean verificaUsuario(String nomeInserido, String senha) {
+    public boolean verificaUsuario(String nomeInserido, String senha) {
         boolean existe = false;
         for (Usuarios usuario : listaUsuarios){
             if(nomeInserido == usuario.nome){
